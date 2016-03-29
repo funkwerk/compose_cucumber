@@ -1,0 +1,6 @@
+version: "2"
+
+services:
+  service:
+    image: ubuntu
+    command: /bin/sh -c 'echo "Test" && sleep 1000'
