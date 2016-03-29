@@ -9,7 +9,7 @@ Feature: Controlling
 
   Scenario: Status
     When I start the application
-    Then the exactly following services are available
+    Then exactly the following services are available
       | Name    | Command            | Image  | Status | Ports |
       | service | ...Test...sleep... | ubuntu | Up...  |       |
 

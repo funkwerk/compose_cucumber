@@ -29,7 +29,7 @@ Then(/^the following services are available$/) do |table|
   check_services table
 end
 
-Then(/^the exactly following services are available$/) do |table|
+Then(/^exactly the following services are available$/) do |table|
   check_services table
   actual = services.map { |service| service.info['Labels']['com.docker.compose.service'] }.uniq.sort
   expected = table.hashes.map { |row| row['Name'] }.sort
